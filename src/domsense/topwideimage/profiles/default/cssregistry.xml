@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object name="portal_css">
+
+ <stylesheet
+    id="++resource++domsense.topwideimage.css"
+    rendering="link"
+    />
+
+</object>

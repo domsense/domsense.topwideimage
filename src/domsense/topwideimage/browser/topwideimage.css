@@ -1,0 +1,38 @@
+#wide-image-wrapper > div{
+    margin:0 auto;
+    width:900px;
+}
+
+.wideimage-slideshow{
+    position:relative;
+}
+
+.wideimage {
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+#wide-image-wrapper ul.tabs{
+    position:absolute;
+    bottom:5px;
+    left:0;
+    width:100%;
+    text-align:center;
+    margin:0;
+}
+
+#wide-image-wrapper ul.tabs li a{
+    text-align:center;
+    padding:2px 5px 2px 7px;
+    border:1px solid #000;
+    background:#000;
+    color:#fff;
+    margin:0;
+    font-size:12px;
+}
+#wide-image-wrapper ul.tabs li a:hover,
+#wide-image-wrapper ul.tabs li a.current{
+    border:1px solid #fff;
+}

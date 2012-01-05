@@ -1,0 +1,5 @@
+setuptools
+plone.app.jquerytools
+
+[test]
+plone.app.testing

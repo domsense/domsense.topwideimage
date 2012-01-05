@@ -1,0 +1,24 @@
+<div id="wide-image-wrapper"
+     tal:condition="view/available"
+     tal:attributes="class python: view.slide_enabled and 'slideshow-enabled' or None">
+
+    <div>
+        <div class="wideimage-slideshow" tal:omit-tag="not:view/slide_enabled">
+            <tal:image repeat="image view/images">
+                <div class="wideimage" tal:attributes="id string:wideimage-${repeat/image/number}">
+                    <img tal:replace="structure image/tag" />
+                </div>
+            </tal:image>
+        </div>
+    </div>
+    <ul class="tabs" tal:condition="view/slide_enabled">
+        <tal:image repeat="image view/images">
+            <li class="tab">
+                <a href="#wideimage-1"
+                   tal:attributes="href string:#wideimage-${repeat/image/number}">
+                   <span class="text" tal:content="repeat/image/number" />
+                </a>
+            </li>
+        </tal:image>
+    </ul>
+</div>

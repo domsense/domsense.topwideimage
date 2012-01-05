@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="domsense.theme2011">
+
+    <browser:viewlet
+        name="domsense.topwideimage"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class=".viewlets.WideImageViewlet"
+        permission="zope2.View"
+        layer=".interfaces.ITheme"
+        />
+
+    <browser:resource
+        name="domsense.topwideimage.js"
+        file="topwideimage.js"
+        />
+
+    <browser:resource
+        name="domsense.topwideimage.css"
+        file="topwideimage.css"
+        />
+
+</configure>
